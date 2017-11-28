@@ -1,0 +1,116 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+.nav {
+  width: 100vw;
+  height: 6vh;
+}
+
+.big-nav {
+  width: 70vw;
+  height: 1.5vh;
+  background: red;
+  margin-left: 3vw;
+  margin-top: 1vh;
+}
+
+.butt {
+  float: left;
+  background: violet;
+  width: 8vw;
+  height: 1vh;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  margin-left: 4vw;
+}
+
+.bar1, .bar2 {
+  background: cyan;
+  height: 1.5vh;
+  float left;
+  margin-left: .5vw;
+}
+
+.bar1 {
+  width: 90vw;
+  margin-top: 1.5vh;
+}
+.bar2 {
+  width: 95vw;
+  margin-top: .5vh;
+  margin-bottom: 3vh;
+}
+
+.gallery {
+  width: 90vw;
+  background: salmon;
+  margin-left: .5vw;
+}
+
+.img {
+  background: yellow;
+  width: 95%;
+  height: 25vh;
+  margin-bottom: 30px;
+}
+
+.pic-butt {
+  background: blue;
+  width: 35%;
+  height: 1vh;
+  margin-left: 5vw;
+}
+
+p {
+  color: green;
+  margin-left: 5px;
+}
+
+@media screen and (min-width:500px) {
+  .gallery {
+    width: 95vw;
+  }
+  .pic {
+    width: 50%;
+    float: left;
+  }
+  .butt {
+    float: none;
+    display: inline-block;
+  }
+  .big-nav {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .bar1 {
+    margin-top: 3vh;
+  }
+  .big-nav, .butt {
+    height: 3vh;
+  }
+  .gallery {
+    width: 100vw;
+  }
+  .pic {
+    width: 25%;
+  }
+  .pic-butt {
+    margin-left: 0;
+  }
+  p {
+    padding: 5px;
+  }
+}
